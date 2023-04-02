@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+"""
+Package information
+"""
 
 description = 'Monte Carlo sampling methods implemented in PyTorch with parallelization.'
 

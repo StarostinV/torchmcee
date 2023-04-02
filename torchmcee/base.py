@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+
+"""
+Base classes implemented here
+"""
+
 from typing import Callable, Tuple
 
 import torch

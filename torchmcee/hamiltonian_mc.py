@@ -1,3 +1,11 @@
+# -*- coding: utf-8 -*-
+
+"""
+Implementation of Hamiltonian Monte Carlo algorithm that uses torch.autograd and calculates
+multiple chains in parallel with support of infinite log prob values.
+"""
+
+
 from typing import Tuple
 
 import torch

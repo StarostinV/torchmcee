@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+
+"""
+Commonly used utils for the package
+"""
+
+
 import torch
 from torch import Tensor
 

@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+
+"""
+Parallel Gaussian KDE in PyTorch that relies on scipy implementation.
+"""
+
 from typing import Union, Tuple
 
 import numpy as np

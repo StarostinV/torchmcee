@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-This module implements affine invariant algorithms described by ...
+This module implements basic functionality for adaptive importance sampling schemes
 """
 
 from typing import Tuple
