@@ -1,10 +1,10 @@
 # _torchmcee_
 
-## Monte Carlo sampling methods implemented in PyTorch with parallelization.
+## Collection of Monte Carlo sampling methods implemented in PyTorch with high parallelization in mind.
 
 Currently supported samplers:
 
-- Hamiltonian Monte Carlo (inspired by __hamiltorch__ package and improved by providing parallel computation)
+- Hamiltonian Monte Carlo (inspired by __hamiltorch__ package and improved by providing parallel computation for multiple chains)
 
 - Affine-Invariant Markov Chain Monte Carlo (inspired by numpy implementation in __emcee__ package)
 
