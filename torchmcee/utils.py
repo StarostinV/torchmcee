@@ -3,8 +3,10 @@
 """
 Commonly used utils for the package
 """
+import time
+import random
 
-
+import numpy as np
 import torch
 from torch import Tensor
 
@@ -52,3 +54,13 @@ def cov(arr: Tensor, weights: Tensor = None, bias: bool = False):
         factor = 1 / (w_sum - (weights ** 2).sum() / w_sum)
 
     return factor * (arr * weights).T @ arr.conj()
+
+
+def set_random_seed(seed=None):
+    if seed is None:
+        seed = int((time.time() * 1e6) % 1e8)
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed(seed)
