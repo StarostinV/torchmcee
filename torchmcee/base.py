@@ -73,7 +73,7 @@ class MCMCBackend(object):
     def get_chain(self, flat: bool = False) -> Tensor:
         chain = torch.cat(self.coords, dim=0)
         if flat:
-            chain = chain.flatten()
+            chain = chain.flatten(0, -2)
         return chain
 
     @property
