@@ -2,7 +2,7 @@
 
 """
 This module implements affine invariant algorithms described by Goodman & Weare (2010) (DOI: 10.2140/camcos.2010.5.65)
-and hugely relied on emcee package (see https://emcee.readthedocs.io)
+and the implementation is adjusted from emcee package (see https://emcee.readthedocs.io)
 """
 
 
