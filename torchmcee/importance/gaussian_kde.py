@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 
 """
-Parallel Gaussian KDE in PyTorch that relies on scipy implementation.
+Parallel Gaussian KDE implemented in PyTorch that relies on scipy implementation.
 """
 
-from typing import Union, Tuple
+from typing import Union
 
 import numpy as np
 import torch
