@@ -184,7 +184,7 @@ class GaussianMixtureKernel(DeterministicKernelMixture):
         return samples
 
     def _kernel_log_prob(self, samples, positions, sizes, **kwargs):
-        return _calc_log_gauss(samples, positions, sizes)
+        return calc_log_gauss(samples, positions, sizes)
 
 
 def calc_dm_log_probs(
@@ -229,7 +229,7 @@ def calc_dm_log_probs(
     return log_prob
 
 
-def _calc_log_gauss(samples, positions, stds):
+def calc_log_gauss(samples, positions, stds):
     stds = 2 * stds ** 2
     dim = samples.shape[-1]
     log_z = 0.5 * dim * log(2 * pi)
