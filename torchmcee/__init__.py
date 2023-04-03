@@ -5,12 +5,12 @@ from torchmcee.base import (
     MCMCSampler,
 )
 
-from torchmcee.hamiltonian_mc import HMCStep
-from torchmcee.affine_invariant_mcmc import (
+from torchmcee.mcmc.hamiltonian_mc import HMCStep
+from torchmcee.mcmc.affine_invariant_mcmc import (
     AffineInvariantMove,
     StretchMove,
 )
 
-from torchmcee.adaptive_imp_sampling import (
+from torchmcee.importance.adaptive_imp_sampling import (
     ImportanceSampling,
 )
