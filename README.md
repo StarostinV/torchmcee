@@ -2,15 +2,15 @@
 
 ## Collection of Monte Carlo sampling methods implemented in PyTorch with high parallelization in mind.
 
-Currently supported samplers:
+Under development. Currently supported samplers:
 
-- Hamiltonian Monte Carlo (inspired by __hamiltorch__ package and improved by providing parallel computation for multiple chains)
+- Hamiltonian Monte Carlo. Unlike __Pyro__ or __hamiltorch__ implementations, it supports parallel computation for multiple chains.
 
 - Affine-Invariant Markov Chain Monte Carlo (inspired by numpy implementation in __emcee__ package)
 
-- Hamiltonian Adaptive Importance Sampling
+- Layered Adaptive Importance Sampling
 
-Additionally, torchmcee provides Gaussian KDE implemented in PyTorch that follows the __scipy__ implementation. 
+- Hamiltonian Adaptive Importance Sampling
 
 
 ## Examples
