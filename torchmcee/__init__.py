@@ -13,4 +13,16 @@ from torchmcee.mcmc.affine_invariant_mcmc import (
 
 from torchmcee.importance.adaptive_imp_sampling import (
     ImportanceSampling,
+    LayeredAISStep,
+    HamiltonianAdaptiveImportanceSampling,
 )
+
+from torchmcee.importance.kernels import (
+    Distribution,
+    Kernel,
+    BasicKernel,
+    DeterministicKernelMixture,
+    GaussianMixtureKernel,
+)
+
+from torchmcee.importance.gaussian_kde import GaussianKDE
